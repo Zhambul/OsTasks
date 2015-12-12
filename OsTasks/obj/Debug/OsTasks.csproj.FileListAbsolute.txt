@@ -1,1 +1,0 @@
-c:\my documents\visual studio 2013\Projects\OsTasks\OsTasks\bin\Debug\OsTasks.exe.config
