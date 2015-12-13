@@ -59,16 +59,12 @@ namespace Task4Dif1
             Console.Write(Environment.NewLine);
 
             Console.WriteLine("Очередь на ввод");
-            for (int i = 0; i < _inputExecutor.Numbers.Count; i++)
+            
+            foreach (var i in _inputExecutor.Numbers.ToList())
             {
-                int number = _inputExecutor.Numbers.Dequeue();
-                Console.Write( number + " ");
-                _inputExecutor.Numbers.Enqueue(number);
+                Console.Write(i + " ");
             }
-//            foreach (var i in _inputExecutor.numbers.ToList())
-//            {
-//                Console.Write(i + " ");
-//            }
+
             Console.Write(Environment.NewLine);
             Console.Write(Environment.NewLine);
 
