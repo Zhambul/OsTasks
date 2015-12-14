@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Concurrent;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading;
@@ -10,11 +11,12 @@ namespace Task4Dif1
         private static ListenerExecutor _inputExecutor;
         private static ListenerExecutor _outputExecutor;
         private static readonly int[] Table;
-
+        public static object EnqueObject;
         public static object ShowObject;
         static Program()
         {
             ShowObject = new object();
+            EnqueObject = new object();
             _inputExecutor = new ListenerExecutor(3);
             _outputExecutor = new ListenerExecutor(1);
             _inputExecutor.NextExecutor = _outputExecutor;
@@ -77,7 +79,7 @@ namespace Task4Dif1
 
             Console.Write(Environment.NewLine);
 
-            Console.WriteLine("Очередь на выход");
+            Console.WriteLine("Очередь на вывод");
             foreach (var i in _outputExecutor.Numbers.ToList())
             {
                 Console.Write(i + " ");
@@ -93,7 +95,7 @@ namespace Task4Dif1
     {
         public List<Listener> Listeners;
 
-        public Queue<int> Numbers;
+        public ConcurrentQueue<int> Numbers;
 
         private bool _isNotifying;
 
@@ -106,12 +108,12 @@ namespace Task4Dif1
             {
                 Listeners.Add(new Listener());
             }
-            Numbers = new Queue<int>();
+            Numbers = new ConcurrentQueue<int>();
         }
 
         public void Notify(int number)
         {
-            lock (Numbers)
+            lock (Program.EnqueObject)
             {
                 Numbers.Enqueue(number);
             }
@@ -127,7 +129,8 @@ namespace Task4Dif1
                             if (!listener.IsWorking)
                             {
                                 listener.IsWorking = true;
-                                int numberFromQueue = Numbers.Dequeue();
+                                int numberFromQueue;
+                                Numbers.TryDequeue(out numberFromQueue);
                                 new Thread(delegate()
                                 {
                                     listener.DoJob(numberFromQueue);
