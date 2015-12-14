@@ -1,0 +1,5 @@
+C:\My documents\Visual Studio 2013\Projects\OsTasks\Task5Dif1\bin\Debug\Task5Dif1.exe.config
+C:\My documents\Visual Studio 2013\Projects\OsTasks\Task5Dif1\bin\Debug\Task5Dif1.exe
+C:\My documents\Visual Studio 2013\Projects\OsTasks\Task5Dif1\bin\Debug\Task5Dif1.pdb
+C:\My documents\Visual Studio 2013\Projects\OsTasks\Task5Dif1\obj\Debug\Task5Dif1.exe
+C:\My documents\Visual Studio 2013\Projects\OsTasks\Task5Dif1\obj\Debug\Task5Dif1.pdb
