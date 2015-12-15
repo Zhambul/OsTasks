@@ -107,8 +107,11 @@ namespace Task5Dif1
                 Console.Clear();
 
                 for (int i = 1; i < _indexes.Length; i++)
-                {
-                    Console.Write(_indexes[i] + "  ");
+                {   
+                    Console.Write(_indexes[i] );
+                    Console.Write(_indexes[i].ToString().Length == 1 ? "    "
+                                : _indexes[i].ToString().Length == 2 ? "   "
+                                : "  ");
                 }
 
                 Console.Write(Environment.NewLine);

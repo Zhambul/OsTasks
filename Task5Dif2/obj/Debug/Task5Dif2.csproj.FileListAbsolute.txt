@@ -1,0 +1,6 @@
+C:\My documents\Visual Studio 2013\Projects\OsTasks\Task5Dif2\bin\Debug\Task5Dif2.exe.config
+C:\My documents\Visual Studio 2013\Projects\OsTasks\Task5Dif2\bin\Debug\Task5Dif2.exe
+C:\My documents\Visual Studio 2013\Projects\OsTasks\Task5Dif2\bin\Debug\Task5Dif2.pdb
+C:\My documents\Visual Studio 2013\Projects\OsTasks\Task5Dif2\obj\Debug\Task5Dif2.csprojResolveAssemblyReference.cache
+C:\My documents\Visual Studio 2013\Projects\OsTasks\Task5Dif2\obj\Debug\Task5Dif2.exe
+C:\My documents\Visual Studio 2013\Projects\OsTasks\Task5Dif2\obj\Debug\Task5Dif2.pdb
