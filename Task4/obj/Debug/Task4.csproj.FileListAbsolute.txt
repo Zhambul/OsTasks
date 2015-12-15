@@ -1,5 +1,0 @@
-C:\My documents\Visual Studio 2013\Projects\OsTasks\Task4\bin\Debug\Task4.exe.config
-C:\My documents\Visual Studio 2013\Projects\OsTasks\Task4\bin\Debug\Task4.exe
-C:\My documents\Visual Studio 2013\Projects\OsTasks\Task4\bin\Debug\Task4.pdb
-C:\My documents\Visual Studio 2013\Projects\OsTasks\Task4\obj\Debug\Task4.exe
-C:\My documents\Visual Studio 2013\Projects\OsTasks\Task4\obj\Debug\Task4.pdb
