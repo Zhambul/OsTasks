@@ -88,7 +88,7 @@ namespace Task5Dif2
             {
                 int randomIndex = Random.Next(1, 10);
 
-                if (Indexes[randomIndex] == 0x)
+                if (Indexes[randomIndex] == 0)
                 {
                     if (Memory[randomIndex*CellSize] == 0)
                     {
